@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="wthree" *ngFor="let blog of blogs">
+    <div  class="col-md-6 wthree-left wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
+      <div class="tch-img">
+        <a routerLink="/blog/{{blog.id}}">
+          <img src="{{blog.image}}" class="img-responsive" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6 wthree-right wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
+      <h3>
+        <a routerLink="/blog/{{blog.id}}">{{blog.title}}</a>
+      </h3>
+      <h6>Par
+        <a href="">{{blog.author | uppercase}} </a>le {{blog.createdTime | date:"dd/MM/yyyy"}}</h6>
+      <p>{{blog.describe}}</p>
+      <div class="bht1">
+        <a routerLink="/blog/{{blog.id}}">Lire</a>
+      </div>
+      <div class="soci">
+        <ul>
+
+          <li class="hvr-rectangle-out">
+            <a class="twit" href="#"></a>
+          </li>
+          <li class="hvr-rectangle-out">
+            <a class="pin" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
