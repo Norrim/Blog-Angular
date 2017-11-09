@@ -12,7 +12,6 @@ import { BlogService } from './service/blog.service';
 
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
 
 
 import { HomeComponent } from './home/home.component';
@@ -21,7 +20,6 @@ import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     HomeComponent,
     AboutComponent
   ],
